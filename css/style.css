@@ -1,0 +1,452 @@
+/* general styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo {
+  font-family: "Montserrat", sans-serif;
+}
+
+/* for header */
+.min-h200 {
+  min-height: 700px;
+}
+
+:root {
+  --color-p: #748182;
+}
+
+p {
+  color: var(--color-p);
+}
+
+.head h2 {
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  background-position: center;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#Home {
+  background: linear-gradient(to left,
+      rgba(0, 0, 0, 0.597),
+      rgba(0, 0, 0, 0.527)),
+    url(../imgs/bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  background-color: black;
+  top: 90%;
+  left: 0;
+  transition: 0.4s;
+}
+
+.navbar-nav .nav-link.active::before,
+.navbar-nav .nav-link.show::before {
+  width: 100%;
+}
+
+nav ul li a:hover::before {
+  width: 100%;
+}
+
+h1 span::after {
+  content: "";
+  animation: typing infinite 2s;
+  transition: 0.5s;
+}
+
+@keyframes typing {
+  0% {
+    content: "|";
+  }
+
+  5% {
+    content: "D";
+  }
+
+  10% {
+    content: "De";
+  }
+
+  15% {
+    content: "Des";
+  }
+
+  20% {
+    content: "Desi";
+  }
+
+  25% {
+    content: "Desig";
+  }
+
+  30% {
+    content: "Design";
+  }
+
+  35% {
+    content: "Designe";
+  }
+
+  40% {
+    content: "Designer";
+  }
+
+  45% {
+    content: "|";
+  }
+
+  50% {
+    content: " ";
+  }
+
+  /* Pause before next word */
+  55% {
+    content: "D";
+  }
+
+  60% {
+    content: "De";
+  }
+
+  65% {
+    content: "Dev";
+  }
+
+  70% {
+    content: "Deve";
+  }
+
+  75% {
+    content: "Devel";
+  }
+
+  80% {
+    content: "Develo";
+  }
+
+  85% {
+    content: "Develop";
+  }
+
+  90% {
+    content: "Develope";
+  }
+
+  95% {
+    content: "Developer";
+  }
+
+  100% {
+    content: "|";
+  }
+
+  105% {
+    content: " ";
+  }
+
+  /* Pause before next word */
+  110% {
+    content: "Ph";
+  }
+
+  115% {
+    content: "Pho";
+  }
+
+  120% {
+    content: "Phot";
+  }
+
+  125% {
+    content: "Photo";
+  }
+
+  130% {
+    content: "Photog";
+  }
+
+  135% {
+    content: "Photogr";
+  }
+
+  140% {
+    content: "Photogra";
+  }
+
+  145% {
+    content: "Photograp";
+  }
+
+  150% {
+    content: "Photograph";
+  }
+
+  155% {
+    content: "Photographer";
+  }
+
+  160% {
+    content: "|";
+  }
+}
+
+/* end of home */
+/* start of about */
+.progress,
+.progress-stacked {
+  height: 30px;
+  background-color: white;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.25) inset;
+}
+
+.imgs {
+  background-image: url(../imgs/dots.png);
+  background-repeat: repeat;
+  transform: translate(-50px, 90px);
+}
+
+.imgs img {
+  transform: translate(70px, -90px);
+}
+
+/* we can use after for background */
+.buttons button:first-child:hover {
+  border: 1px solid black;
+  background-color: white;
+  color: black;
+}
+
+.buttons button:last-child {
+  background-color: white;
+  border: 1px solid black;
+}
+
+.buttons button:last-child:hover {
+  background-color: black;
+  color: white;
+}
+
+/* end of about */
+/* start of Services */
+#Services {
+  background-color: #eee;
+}
+
+#Services .item {
+  box-shadow: 0px 10px 30px -8px rgba(0, 0, 0, 0.1);
+}
+
+#Services .item i {
+  background-color: #eee;
+  padding: 10px;
+  transition: 1s;
+}
+
+#Services .item:hover i {
+  background-color: black;
+  color: white;
+}
+
+/* end of Services */
+/* start of portoflio */
+#Works .photo {
+  position: relative;
+}
+
+#Works .photo .layer {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  bottom: 5%;
+  right: 5%;
+  background-color: white;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+#Works .photo:hover .layer {
+  opacity: 1;
+}
+
+#Works .photo .icon {
+  transform: translateY(100px);
+  transition: 0.2s;
+}
+
+#Works .photo .para {
+  transform: translateY(-100px);
+  transition: 0.6s;
+}
+
+#Works .photo .icon i {
+  transition: 0.6s;
+}
+
+#Works .photo .icon i:hover {
+  background-color: white !important;
+  color: black !important;
+}
+
+#Works .photo:hover .icon {
+  transform: translateY(0px);
+}
+
+#Works .photo:hover .para {
+  transform: translateY(0px);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: transparent;
+  color: black;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+  background-color: transparent;
+  color: black;
+}
+
+.nav-pills .nav-link.active::before,
+.nav-pills .show>.nav-link::before {
+  width: 80%;
+  background-color: black;
+}
+
+#Works .nav-link {
+  position: relative;
+}
+
+#Works .nav-link::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  position: absolute;
+  background-color: black;
+  top: 90%;
+  left: 0;
+  transition: 0.4s;
+}
+
+#Works .nav-link:hover::before {
+  width: 100%;
+}
+
+#Works .nav-link.active::before {
+  width: 100%;
+}
+
+.modal-header .btn-close {
+  margin-left: auto;
+}
+
+.modal-content {
+  width: fit-content;
+}
+
+/* end of portoflio */
+/* start of clients */
+#Clients {
+  background-color: #eee;
+}
+
+.carousel-indicators [data-bs-target] {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+  background-color: #748182;
+}
+
+/* end of clients */
+/* start of teams */
+#Team {
+  background-color: #eee;
+}
+
+#Team .layer {
+  background-color: rgba(255, 255, 255, 0.87);
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  bottom: 30%;
+  right: 2%;
+  opacity: 0;
+  transition: 1s;
+}
+
+#Team .content:hover .layer {
+  opacity: 1;
+  transform: scale(0.999) rotateY(360deg);
+}
+
+#Team .content img {
+  transition: 0.5s;
+}
+
+#Team .content .layer a i {
+  transition: 0.5s;
+}
+
+#Team .content .layer a i:hover {
+  color: black !important;
+  background-color: white !important;
+}
+
+#Team .content:hover img {
+  transform: scale(1.2);
+}
+
+/* end of teams */
+/* start of contact */
+#Contact .contact-content i {
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 50%;
+  transition: 0.5s;
+}
+
+#Contact .contact-content:hover i {
+  background-color: black;
+  color: white;
+}
+
+#Contact form input {
+  background-color: #eee;
+}
+#Contact form textarea {
+  background-color: #eee;
+  height: 150px;
+}
+#Contact form button {
+  transition: 0.5s;
+}
+#Contact form button:hover {
+  background-color: white !important;
+  color: black !important;
+}
+#Contact input:focus {
+  outline: none;
+}
+
+/* end of contact */
