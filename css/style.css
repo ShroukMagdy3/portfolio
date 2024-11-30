@@ -394,29 +394,23 @@ h1 span::after {
   opacity: 0;
   transition: 1s;
 }
-
 #Team .content:hover .layer {
   opacity: 1;
   transform: scale(0.999) rotateY(360deg);
 }
-
 #Team .content img {
   transition: 0.5s;
 }
-
 #Team .content .layer a i {
   transition: 0.5s;
 }
-
 #Team .content .layer a i:hover {
   color: black !important;
   background-color: white !important;
 }
-
 #Team .content:hover img {
   transform: scale(1.2);
 }
-
 /* end of teams */
 /* start of contact */
 #Contact .contact-content i {
@@ -425,12 +419,10 @@ h1 span::after {
   border-radius: 50%;
   transition: 0.5s;
 }
-
 #Contact .contact-content:hover i {
   background-color: black;
   color: white;
 }
-
 #Contact form input {
   background-color: #eee;
 }
